@@ -1,0 +1,366 @@
+@import url("fonts.css");
+@import url("fontello/css/fontello.css");
+
+body::-webkit-scrollbar {
+   display: none;
+}
+
+html{
+   height: 100%;
+   margin: 0;
+}
+
+body{
+ 
+   background-image: url(../images/headerbg.jpg);
+
+   background-size: cover;
+}
+
+
+/*  2. Typography
+       Vertical rhythm with leading derived from 6
+--------------------------------------------------------------------- */
+
+/*  4. List  --------------------------------------------------------- */
+
+ul,
+ol {
+   margin-bottom: 24px;
+   margin-top: 12px;
+}
+
+ul {
+   list-style: none outside;
+}
+
+ol {
+   list-style: decimal;
+}
+
+ol,
+ul.square,
+ul.circle,
+ul.disc {
+   margin-left: 30px;
+}
+
+ul.square {
+   list-style: square outside;
+}
+
+ul.circle {
+   list-style: circle outside;
+}
+
+ul.disc {
+   list-style: disc outside;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+   margin: 6px 0 6px 30px;
+}
+
+ul ul li,
+ul ol li,
+ol ol li,
+ol ul li {
+   margin-bottom: 6px;
+}
+
+li {
+   line-height: 18px;
+   margin-bottom: 12px;
+}
+
+ul.large li {}
+
+li p {}
+
+
+/* smaller screens
+--------------------------------------------------------------- */
+@media only screen and (max-width: 900px) {
+
+   /* block grids on small screens */
+   .s-bgrid-sixths [class*="column"] {
+      width: 16.66667%;
+   }
+
+   .s-bgrid-quarters [class*="column"] {
+      width: 25%;
+   }
+
+   .s-bgrid-thirds [class*="column"] {
+      width: 33.33333%;
+   }
+
+   .s-bgrid-halves [class*="column"] {
+      width: 50%;
+   }
+
+   /* block grids left clearing */
+   .first {
+      clear: none;
+   }
+
+   .s-first {
+      clear: left;
+   }
+
+}
+
+/* mobile wide/smaller tablets
+--------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+
+   .row {
+      width: 460px;
+      margin: 0 auto;
+      padding: 0;
+   }
+
+   .column,
+   .columns {
+      width: auto !important;
+      float: none;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0 30px;
+   }
+
+   .row .row {
+      width: auto;
+      max-width: none;
+      margin: 0 -30px;
+   }
+
+   [class*="column"]+[class*="column"]:last-child {
+      float: none;
+   }
+
+   [class*="bgrid"] [class*="column"]+[class*="column"]:last-child {
+      float: none;
+   }
+
+   /* Offsets */
+   .row .offset-1 {
+      margin-left: 0%;
+   }
+
+   .row .offset-2 {
+      margin-left: 0%;
+   }
+
+   .row .offset-3 {
+      margin-left: 0%;
+   }
+
+   .row .offset-4 {
+      margin-left: 0%;
+   }
+
+   .row .offset-5 {
+      margin-left: 0%;
+   }
+
+   .row .offset-6 {
+      margin-left: 0%;
+   }
+
+   .row .offset-7 {
+      margin-left: 0%;
+   }
+
+   .row .offset-8 {
+      margin-left: 0%;
+   }
+
+   .row .offset-9 {
+      margin-left: 0%;
+   }
+
+   .row .offset-10 {
+      margin-left: 0%;
+   }
+
+   .row .offset-11 {
+      margin-left: 0%;
+   }
+}
+
+/* mobile narrow
+--------------------------------------------------------------- */
+@media only screen and (max-width: 460px) {
+
+   .row {
+      width: auto;
+   }
+
+}
+
+/* larger screens
+--------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+
+   .wide .row {
+      max-width: 1180px;
+   }
+
+}
+
+/* ------------------------------------------------------------------ */
+/* e. Others
+/* ------------------------------------------------------------------ */
+
+/*  1. Clearing
+    (http://nicolasgallagher.com/micro-clearfix-hack/
+--------------------------------------------------------------------- */
+
+.cf:before,
+.cf:after {
+   content: " ";
+   display: table;
+}
+
+.cf:after {
+   clear: both;
+}
+
+/*  2. Misc -------------------------------------------------------- */
+
+.remove-bottom {
+   margin-bottom: 0 !important;
+}
+
+.half-bottom {
+   margin-bottom: 12px !important;
+}
+
+.add-bottom {
+   margin-bottom: 24px !important;
+}
+
+.no-border {
+   border: none;
+}
+
+.text-center {
+   text-align: center !important;
+}
+
+.text-left {
+   text-align: left !important;
+}
+
+.text-right {
+   text-align: right !important;
+}
+
+.pull-left {
+   float: left !important;
+}
+
+.pull-right {
+   float: right !important;
+}
+
+.align-center {
+   margin-left: auto !important;
+   margin-right: auto !important;
+   text-align: center !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* b. Header Styles
+/* ------------------------------------------------------------------ */
+
+header {
+   position: relative;
+   margin-top: 10vh;
+   width: 100%;
+   background-size: cover !important;
+	-webkit-background-size: cover !important;
+   text-align: center;
+   overflow: hidden;
+}
+
+/* vertically center banner section */
+header:before {
+   content: '';
+   display: inline-block;
+   vertical-align: middle;
+   height: 100%;
+}
+header .banner {
+   display: inline-block;
+   vertical-align: middle;
+   margin: 0 auto;
+   width: 85%;
+   padding-bottom: 30px;
+   text-align: center;
+}
+
+header .banner-text { width: 100%; }
+header .banner-text h1 {
+   font: 90px/1.1em 'opensans-bold', sans-serif;
+   color: #fff;
+   letter-spacing: -2px;
+   margin: 0 auto 18px auto;
+   text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+}
+header .banner-text h3 {
+   font: 18px/1.9em 'librebaskerville-regular', serif;
+   color: #A8A8A8;
+   margin: 0 auto;
+   width: 70%;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+header .banner-text h3 span,
+header .banner-text h3 a {
+   color: #fff;
+}
+header .banner-text hr {
+   width: 60%;
+   margin: 18px auto 24px auto;
+   border-color: #2F2D2E;
+   border-color: rgba(150, 150, 150, .1);
+}
+
+/* header social links */
+header .social {
+   margin: 24px 0;
+   padding: 0;
+   font-size: 30px;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+}
+header .social li {
+   display: inline-block;
+   margin: 0 15px;
+   padding: 0;
+}
+header .social li a { color: #fff; }
+header .social li a:hover { color: #11ABB0; }
+
+/* scrolldown link */
+header .scrolldown a {
+   position: absolute;
+   bottom: 30px;
+   left: 50%;
+   margin-left: -29px;
+   color: #fff;
+   display: block;
+   height: 42px;
+   width: 42px;
+   font-size: 42px;
+   line-height: 42px;
+   color: #fff;
+   border-radius: 100%;
+
+
+   transition: all .3s ease-in-out;
+}
+header .scrolldown a:hover { color: #11ABB0; }
