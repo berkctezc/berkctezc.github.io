@@ -99,9 +99,7 @@
     font-style: normal;
 }
 
-/*
- * Libre Baskerville
-================================================================================ */   
+/* Libre Baskerville */   
 @font-face {
     font-family: 'librebaskerville-bold';
     src: url('fonts/librebaskerville/librebaskerville-bold-webfont.eot');
@@ -131,22 +129,4 @@
          url('fonts/librebaskerville/librebaskerville-regular-webfont.svg#libre_baskervilleregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-
-
-/*
- * FIXED for Font-Face Chrome Rendering
-================================================================================ */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-
-   @font-face {
-   font-family: 'opensans-semibold';
-   src: url('fonts/opensans/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
-   }
-
-   @font-face {
-   font-family: 'opensans-bold';
-   src: url('fonts/opensans/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
-   }
-
 }
