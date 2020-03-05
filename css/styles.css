@@ -76,42 +76,6 @@ li {
    margin-bottom: 12px;
 }
 
-ul.large li {}
-
-li p {}
-
-
-/* smaller screens
---------------------------------------------------------------- */
-@media only screen and (max-width: 900px) {
-
-   /* block grids on small screens */
-   .s-bgrid-sixths [class*="column"] {
-      width: 16.66667%;
-   }
-
-   .s-bgrid-quarters [class*="column"] {
-      width: 25%;
-   }
-
-   .s-bgrid-thirds [class*="column"] {
-      width: 33.33333%;
-   }
-
-   .s-bgrid-halves [class*="column"] {
-      width: 50%;
-   }
-
-   /* block grids left clearing */
-   .first {
-      clear: none;
-   }
-
-   .s-first {
-      clear: left;
-   }
-
-}
 
 /* mobile wide/smaller tablets
 --------------------------------------------------------------- */
