@@ -2,7 +2,7 @@
 
 :root {
    /*css variables*/
-   --social_hover: #ec701d;
+   --social_hover: #ff5500;
    --social_inactive: #ffffff;
    --body_background: url(../images/headerbg.jpg);
    --pp_border: 70% 30% 70% 30% / 30% 70% 30% 70%;
@@ -39,6 +39,14 @@ li {
    border-radius: var(--pp_border);
    max-width: 25%;
    width: 250px;
+}
+
+.subtext{
+   font: 18px/1.9em 'librebaskerville-regular', serif;
+   color: #f3d5df;
+   margin: 0 auto;
+   width: 70%;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
 }
 
 @media only screen and (max-width: 767px) {
@@ -99,18 +107,6 @@ header .banner-text h1 {
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 
-header .banner-text h3 {
-   font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
-   margin: 0 auto;
-   width: 70%;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-}
-
-header .banner-text h3 span,
-header .banner-text h3 a {
-   color: #fff;
-}
 
 header .banner-text hr {
    width: 60%;
@@ -166,7 +162,7 @@ header .social li a:hover {
       letter-spacing: -1px;
    }
 
-   header .banner-text h3 {
+   .subtext {
       font: 17px/1.9em 'librebaskerville-regular', serif;
       width: 80%;
    }
@@ -190,7 +186,7 @@ header .social li a:hover {
       font: 68px/1.1em 'opensans-bold', sans-serif;
    }
 
-   header .banner-text h3 {
+   .subtext {
       font: 16px/1.9em 'librebaskerville-regular', serif;
       width: 85%;
    }
@@ -223,7 +219,7 @@ header .social li a:hover {
       margin: 0 auto 24px auto;
    }
 
-   header .banner-text h3 {
+   .subtext {
       font: 14px/1.9em 'librebaskerville-regular', sans-serif;
       width: 90%;
    }
